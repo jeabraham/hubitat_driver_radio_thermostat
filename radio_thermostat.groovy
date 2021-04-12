@@ -276,6 +276,7 @@ def setThermostatFanMode(fanMode) {
     //log.debug "setThermostatFanMode(${fanMode})"
 
     switch (fanMode) {
+    case " auto":       return fanAuto()
     case "auto":        return fanAuto()
     case "circulate":   return fanCirculate()
     case "on":          return fanOn()
